@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.laki_hero.view.HomeFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_riwayat"
+            app:destination="@id/navigation_riwayat" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_reward"
+            app:destination="@id/navigation_reward" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_about"
+            app:destination="@id/navigation_about" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_riwayat"
+        android:name="com.example.laki_hero.view.RiwayatLaporanFragment"
+        android:label="@string/riwayat"
+        tools:layout="@layout/fragment_riwayat_laporan" >
+        <action
+            android:id="@+id/action_navigation_riwayat_to_navigation_home"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_navigation_riwayat_to_navigation_reward"
+            app:destination="@id/navigation_reward" />
+        <action
+            android:id="@+id/action_navigation_riwayat_to_navigation_about"
+            app:destination="@id/navigation_about" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_reward"
+        android:name="com.example.laki_hero.view.RewardFragment"
+        android:label="@string/reward"
+        tools:layout="@layout/fragment_reward">
+        <action
+            android:id="@+id/action_navigation_reward_to_navigation_about"
+            app:destination="@id/navigation_about" />
+        <action
+            android:id="@+id/action_navigation_reward_to_navigation_home"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_navigation_reward_to_navigation_riwayat"
+            app:destination="@id/navigation_riwayat" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_about"
+        android:name="com.example.laki_hero.view.AboutFragment"
+        android:label="@string/about"
+        tools:layout="@layout/fragment_about">
+        <action
+            android:id="@+id/action_navigation_about_to_navigation_riwayat"
+            app:destination="@id/navigation_riwayat" />
+        <action
+            android:id="@+id/action_navigation_about_to_navigation_reward"
+            app:destination="@id/navigation_reward" />
+        <action
+            android:id="@+id/action_navigation_about_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+</navigation>

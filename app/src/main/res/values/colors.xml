@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="blackbgt">#040404</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#808080</color>
+    <color name="young_grey">#e8e4e4</color>
+    <color name="gkYoung">#686a6e</color>
+    <color name="sedikittuagrey">#adacac</color>
+    <color name="orange">#ff6404</color>
+    <color name="aqua">#0091EA</color>
+    <color name="biru">#0e56ab</color>
+    <color name="birusubmit">#108AC4</color>
+    <color name="hijau">#90cc9c</color>
+    <color name="kuning">#ffac04</color>
+    <color name="merah">#FF0000</color>
+    <color name="hijauterang">#219E21</color>
+    <color name="gold1">#ffb404</color>
+    <color name="gold2">#ffa404</color>
+
+</resources>

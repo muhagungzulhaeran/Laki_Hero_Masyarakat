@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginBottom="10dp"
+    android:backgroundTint="@color/hijau"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/dollarIv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/dollar_bag_svgrepo_com"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <TextView
+            android:id="@+id/transferMasukTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="7dp"
+            android:layout_marginStart="15dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/dollarIv"
+            android:text="@string/transfermasuk"/>
+
+<!--        <TextView-->
+<!--            android:id="@+id/namaTempatLaporanTv"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="15dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/dollarIv"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/transferMasukTv"-->
+<!--            android:text="@string/laporanSaya"-->
+<!--            />-->
+        <TextView
+            android:id="@+id/Rp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/rp"
+            app:layout_constraintStart_toEndOf="@+id/dollarIv"
+            app:layout_constraintTop_toBottomOf="@+id/transferMasukTv"
+            android:layout_marginStart="15dp" />
+        <TextView
+            android:id="@+id/isiRp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/uangAngka"
+            app:layout_constraintStart_toEndOf="@+id/Rp"
+            app:layout_constraintTop_toBottomOf="@+id/transferMasukTv" />
+        <TextView
+            android:id="@+id/isiTgl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:text="@string/tanggal"
+            app:layout_constraintStart_toEndOf="@+id/dollarIv"
+            app:layout_constraintTop_toBottomOf="@+id/Rp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
